@@ -16,14 +16,12 @@
 
 #content{
   	font-family: 'Gugi', cursive;
-  background: linear-gradient(to bottom, #00FFFF 0%, #4682B4 100%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+
 width:100%;
   height: 100%;
   margin: 0, auto;
-  grid-gap: 10px;
   grid-template-areas:
   "header header header header"
   "section section section section"
@@ -34,7 +32,7 @@ width:100%;
 ;
 }
 #content > *{
-   border: 1px solid white;
+
   padding: 30px;
 }
 header{
@@ -70,9 +68,9 @@ section{
 
   body {
     margin: 0;
-    color:#191970;
+
     font-family: 'Dosis', sans-serif;
-    background-color: #C0AB8E;
+    background: linear-gradient(to bottom, #00FFFF 0%, #4682B4 100%);
   }
 
 h3#opening{
@@ -300,8 +298,8 @@ h3#opening{
 }
 
 .topnav a.active {
-  background-color: white;
-  color: #4682B4;
+  background-color: #4682B4;
+  color:white;
   border-radius: 25%;
 }
 
@@ -319,6 +317,18 @@ h3#opening{
 
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {
+
+  .topnav{
+    background-color: inherit;
+  }
+
+  .topnav a.active {
+    background-color: inherit;
+  }
+
+.topnav a{
+  font-size: 16px;
+}
   .topnav a, .topnav-right {
     float: none;
     display: block;
@@ -359,7 +369,7 @@ h3#opening{
     <a href="#contact">Contact</a>
 
     <!-- Right-aligned links -->
-    <div class="topnav-right">
+     <div class="topnav-right">
       <a href="#search">Search</a>
       <a href="#about">About</a>
     </div>
