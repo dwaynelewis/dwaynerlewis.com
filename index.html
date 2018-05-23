@@ -8,7 +8,6 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
- <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
  	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <title>KALI demo</title>
@@ -104,16 +103,21 @@ width: 20%;
   margin: 2px auto;
 font-size: 2vw;
 position: absolute;
-bottom:.8%;
-right:45%;
-width: 20%;
+bottom:0;
+color:red;
+width: 100%;
 font-family: Arial;
+text-align: center;
+ background: rgba(0, 0, 0, 0.5);
+-webkit-animation-duration: 3s;
+-webkit-animation-delay: 2s;
+-webkit-animation-iteration-count: 1;
 }
 
 .content .transparency {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* Black background with transparency */
+    /* background: rgba(0, 0, 0, 0.6); /* Black background with transparency */ */
     color: red;
     width: 100%;
     padding: 20px;
@@ -243,7 +247,7 @@ width: 20%;
 -webkit-animation-iteration-count: 1;
 }
 
-.transparency{
+#link6{
   display: none;
 }
 .transparency2{
@@ -287,11 +291,11 @@ width: 20%;
 
 
 	<a href="#" id="link1" class= "intro animated bounceInDown"><h1>dwayne r. lewis</h1></a>
-    <a href="#" id="link4" class="intro animated bounceInUp"><h2>contact</h2>
+    <a href="contact.html" id="link4" class="intro animated bounceInUp"><h2>contact</h2>
   <a href="#" id="link2" class="intro animated bounceInDown"><h2>nikolas</h2></a>
     <a href="#" id="link3" class="intro animated bounceInUp"><h2>joziah</h2></a>
 
-      <div class="transparency">  <a href="#" id="link6" class="intro animated bounceInUp"><a><h2>contact</h2></a></div>
+      <div> <a href="contact.html" id="link6" class="intro animated slideInUp"><h2>contact</h2></a></div>
         <div class="transparency2">	<a href="#" id="link5" class= "intro animated bounceInDown">
           <h1 style="color:white;line-height: .3; margin-top: 10%;">dwayne r. lewis</h1>
           <p style="color:white; margin-bottom: 0;">web developer<p style="font-size: 12px; color:white;">grandpa</p></div>
