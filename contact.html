@@ -329,12 +329,13 @@ h3#opening{
 .topnav a{
   font-size: 16px;
 }
-  .topnav a, .topnav-right {
+  .topnav-right, .left{
     float: none;
-    display: block;
+    display: none;
   }
 
   .topnav-centered a {
+    display: block;
     position: relative;
     top: 0;
     left: 0;
@@ -365,8 +366,10 @@ h3#opening{
     </div>
 
     <!-- Left-aligned links (default) -->
+    <div class="left">
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
+  </div>
 
     <!-- Right-aligned links -->
      <div class="topnav-right">
