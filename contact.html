@@ -14,6 +14,54 @@
 
 <style>
 
+
+
+
+  @keyframes spinner {
+    100% {
+      transform: rotate(3600deg);
+    }
+  }
+
+  .loading-container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+
+  .spinner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/oSHLAzp.png') center center;
+    background-size: contain;
+    transition-origin: 50% 50%;
+    animation: spinner 3s infinite alternate ease-in-out;
+  }
+  .spinner-center {
+    display: inline-block;
+    position: absolute;
+    margin-left: -100px;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+    background-size: contain;
+    content: '';
+  }
+
+#intro{
+    background: white;
+  height: 100%;
+}
+
+  #outro{
+    display: none;
+  }
+</style>
+
+<style>
 #content{
   	font-family: 'Gugi', cursive;
   display: grid;
@@ -54,7 +102,7 @@ section{
 }
 
 #demo{
-  background-color: white;
+  background-color: inherit;
   color: white;
   text-align: center;
 }
@@ -93,6 +141,7 @@ h3#opening{
     display: block;
    margin-left: auto;
    margin-right: auto;
+   background-color: inherit;
   }
   #ques1{
     display: none;
@@ -276,7 +325,7 @@ h3#opening{
 .topnav {
   position: relative;
   overflow: hidden;
-  background-color:#4682B4;
+  background-color:inherit;
 }
 
 .topnav a {
@@ -294,7 +343,7 @@ h3#opening{
 }
 
 .topnav a.active {
-  background-color: #4682B4;
+  background-color: inherit;
   color:white;
   border-radius: 25%;
 }
@@ -345,6 +394,17 @@ h3#opening{
 
 </head>
 <body>
+
+
+  <div id="intro">
+
+      <div class="loading-container">
+      <div class="spinner"></div>
+      <div class="spinner-center"></div>
+    </div>
+  </div>
+
+  <div id="outro">
 
     <div id="content">
 
@@ -485,6 +545,28 @@ h3#opening{
 
 
     </main>
+
+  </div>
+</div>
+
+
+      <script> //INTRO
+    $(document).ready(function(){
+        $(function(){
+
+            $("#intro").delay(2000).fadeOut("slow");
+
+         });
+     });
+     </script>
+     <script>
+    $(document).ready(function(){
+        $(function(){
+
+            $("#outro").delay(2500).fadeIn("slow");
+        });
+    });
+    </script>
 
     <script>
 
