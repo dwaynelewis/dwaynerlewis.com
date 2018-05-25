@@ -32,13 +32,14 @@ font-size: 7.5rem;
 p{
   margin:9% 0 5% 18%;
 }
+
 }
 	@media screen and (max-width: 450px){
 .label{
 position: absolute;
 background-color: red;
 opacity: .7;
-height: 20%;
+height: 40%;
 width: 69%;
 top:42%;
 left:14%;
@@ -52,6 +53,7 @@ p{
   margin:21% 0 5% 5%;
 }
 }
+
 .bg {
     /* The image used */
     background-image: url("me.jpg");
@@ -64,12 +66,94 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+
+<style>
+
+@keyframes spinner {
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+
+.loading-container {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+.spinner {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: url('http://i.imgur.com/oSHLAzp.png') center center;
+  background-size: contain;
+  transition-origin: 50% 50%;
+  animation: spinner 3s infinite alternate ease-in-out;
+}
+.spinner-center {
+  display: inline-block;
+  position: absolute;
+  margin-left: -100px;
+  width: 100px;
+  height: 100px;
+  background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+  background-size: contain;
+  content: '';
+}
+
+
+
+ .bg{
+  display: none;
+}
+</style>
+
 </head>
 <body>
 
-<div class="bg"></div>
+    <div id="intro">
+
+      <div class="loading-container">
+      <div class="spinner"></div>
+      <div class="spinner-center"></div>
+
+    </div>
+  </div>
+
+<div class="bg">
 <div class="label"><p>for the culture</p></div>
+</div>
+
+
+
+
+
+
+  	<script> //INTRO
+  $(document).ready(function(){
+      $(function(){
+
+          $("#intro").delay(2000).fadeOut("slow");
+
+       });
+   });
+   </script>
+   <script>
+  $(document).ready(function(){
+      $(function(){
+
+          $(".bg").delay(2500).fadeIn("slow");
+      });
+  });
+  </script>
+
 
 </body>
 </html>
