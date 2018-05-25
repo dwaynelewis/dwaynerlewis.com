@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+  position: relative;
+}
+
+
+	@media screen and (min-width: 450px){
+.label{
+position: absolute;
+background-color: red;
+opacity: .7;
+height: 39%;
+width: 69%;
+top:42%;
+left:15%;
+color: white;
+font-family: 'Anton', sans-serif;
+font-weight: bold;
+font-size: 7.5rem;
+
+}
+p{
+  margin:9% 0 5% 18%;
+}
+}
+	@media screen and (max-width: 450px){
+.label{
+position: absolute;
+background-color: red;
+opacity: .7;
+height: 20%;
+width: 69%;
+top:42%;
+left:14%;
+color: white;
+font-family: 'Anton', sans-serif;
+font-weight: bold;
+font-size: 2.5rem;
+
+}
+p{
+  margin:21% 0 5% 5%;
+}
+}
+.bg {
+    /* The image used */
+    background-image: url("me.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="label"><p>for the culture</p></div>
+
+</body>
+</html>

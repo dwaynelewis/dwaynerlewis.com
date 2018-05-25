@@ -315,6 +315,60 @@ width: 20%;
 
 
 
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: red;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -334,16 +388,15 @@ width: 20%;
 <div class="content">
 
 
-	<a href="#" id="link1" class= "intro animated bounceInDown"><h1>dwayne r. lewis</h1></a>
-    <a href="contact.html" id="link4" class="intro animated bounceInUp"><h2>contact</h2></a>
+  <a href="#" id="link1" class= "intro animated bounceInDown"><h1>dwayne r. lewis</h1></a>
+    <a  id="link4" class="intro animated bounceInUp" onclick="openNav()"><h2>enter</h2></a>
   <a href="#" id="link2" class="intro animated bounceInDown"><h2>nikolas</h2></a>
     <a href="#" id="link3" class="intro animated bounceInUp"><h2>joziah</h2></a>
 
-      <a href="contact.html" id="link6" class="intro animated slideInUp"><h2>contact</h2></a>
+          <a id="link6" class="intro animated slideInUp"  onclick="openNav()"><h2>enter</h2></a>
         <div class="transparency2" id="link5" class= "intro animated bounceInDown">
           <h1 style="color:white;line-height: .3; margin-top: 10%;  margin-bottom: 5px;">dwayne r. lewis</h1>
           <p style="color:#FFA07A; margin-bottom: 0;">web developer<p style="font-size: 12px; color:#FA8072;">grandpa</p></div>
-        <!-- <div class="transparency3" id="link5" class= "intro animated bounceInDown">web developer</div> -->
 
 </div>
 
@@ -353,6 +406,29 @@ width: 20%;
 
 </div>
 
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="aboutme.html">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
 
 
   	<script> //INTRO
