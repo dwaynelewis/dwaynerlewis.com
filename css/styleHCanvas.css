@@ -74,5 +74,6 @@ img {
     display: table-cell;
     height: 100%;
     margin: 0;
-    vertical-align: middle;
+    padding-top: 4rem;
+    /* vertical-align: middle; */
 }
