@@ -370,7 +370,7 @@ body::-webkit-scrollbar-thumb,
 }
 
 .home-page .social-media li a {
-    color: #8b8b8b;
+    color: snow;
 }
 
 .home-page .copy-right {
@@ -380,7 +380,7 @@ body::-webkit-scrollbar-thumb,
     padding: 20px;
     font-size: 14px;
     margin: 0;
-    color: #8b8b8b;
+    color: snow;
 }
 
 .home-page .molo-welcome {
