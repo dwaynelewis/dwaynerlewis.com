@@ -87,12 +87,28 @@ p {
 /** All Page **/
 
 .about-page,
-.services-page,
 .contact-page,
 .portfolio-page {
     height: 80%;
     width: 90%;
     background: #fff;
+    position: absolute;
+    left: 0;
+    margin: auto;
+    right: 0;
+    display: none;
+    z-index: 22;
+    top: 10%;
+    z-index: 333;
+    border-radius: 5px;
+    color: #333;
+    padding: 0;
+}
+
+.services-page {
+    height: 80%;
+    width: 90%;
+    background: #DC143C;
     position: absolute;
     left: 0;
     margin: auto;
