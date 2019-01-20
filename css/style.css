@@ -533,6 +533,7 @@ body::-webkit-scrollbar-thumb,
     margin-top: 15px;
     font-size: 13px;
     margin-bottom: 0;
+    font-weight: 500;
 }
 
 
