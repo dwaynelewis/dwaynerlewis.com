@@ -1,13 +1,12 @@
 h2:before,
 .home-page .content-home h1 span,
 .about-page h2 span {
-    color: #DC143C;
+  color: black;
 }
 
 .home-page .content-home h1:after {
-    border-bottom: 4px solid #DC143C;
+  border-bottom: 4px solid #dc143c;
 }
-
 
 /** Start icon-max && Close **/
 
@@ -19,7 +18,7 @@ h2:before,
 .dot1,
 .dot2,
 .portfolio-page .nav-portfolio ul li.active {
-    background: #DC143C;
+  background: #dc143c;
 }
 
 body::-webkit-scrollbar-thumb,
@@ -27,31 +26,30 @@ body::-webkit-scrollbar-thumb,
 .contact-page .container-scroll::-webkit-scrollbar-thumb,
 .portfolio-page .container-scroll::-webkit-scrollbar-thumb,
 .about-page .container-scroll::-webkit-scrollbar-thumb {
-    background: #DC143C;
+  background: #dc143c;
 }
-
 
 /** Bottom Molo **/
 
 .btn-molo {
-    background-color: #DC143C;
+  background-color: #dc143c;
 }
 
 .btn-molo-border,
 .btn-molo {
-    border-color: #DC143C;
+  border-color: #dc143c;
 }
 
 .services-page h3:before,
 .navbar-dark .navbar-nav .nav-item:before {
-    border-bottom: 2px solid #DC143C;
+  border-bottom: 2px solid #dc143c;
 }
 
 .portfolio-page .nav-portfolio ul li {
-    border: 1px solid #DC143C;
+  border: 1px solid #dc143c;
 }
 
 .contact-page form .form-input:focus,
 .contact-page form .textarea-input:focus {
-    border-bottom: 2px solid #DC143C;
+  border-bottom: 2px solid #dc143c;
 }
